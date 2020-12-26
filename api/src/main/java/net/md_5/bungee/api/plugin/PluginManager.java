@@ -172,9 +172,10 @@ public final class PluginManager
         {
             if ( tabResults == null )
             {
-                sender.sendMessage( ( command.getPermissionMessage() == null ) ? proxy.getTranslation( "no_permission" ) : command.getPermissionMessage() );
+
+                //sender.sendMessage( ( command.getPermissionMessage() == null ) ? proxy.getTranslation( "no_permission" ) : command.getPermissionMessage() );
             }
-            return true;
+            return false; // Act like the command does not exist!!
         }
 
         String[] args = Arrays.copyOfRange( split, 1, split.length );
