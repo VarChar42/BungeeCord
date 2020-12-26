@@ -40,6 +40,9 @@ public class ModuleManager
         moduleDirectory.mkdir();
 
         ModuleVersion bungeeVersion = ModuleVersion.parse( proxy.getVersion() );
+
+        /*
+
         if ( bungeeVersion == null )
         {
             System.out.println( "Couldn't detect bungee version. Custom build?" );
@@ -128,6 +131,8 @@ public class ModuleManager
                 module.getProvider().retrieve( module, bungeeVersion );
             }
         }
+        */
+
     }
 
     @SuppressFBWarnings("REC_CATCH_EXCEPTION")
