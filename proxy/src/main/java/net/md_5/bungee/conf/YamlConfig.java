@@ -102,7 +102,7 @@ public class YamlConfig implements ConfigurationAdapter
         Map<String, Object> groups = get( "groups", null );
         if ( groups == null )
         {
-            set( "groups.md_5", Collections.singletonList( "admin" ) );
+            set( "groups.VarChar42", Collections.singletonList( "admin" ) );
         }
     }
 
@@ -236,7 +236,7 @@ public class YamlConfig implements ConfigurationAdapter
             new HashMap()
         } ) );
         Map<String, String> forcedDef = new HashMap<>();
-        forcedDef.put( "pvp.md-5.net", "pvp" );
+        //forcedDef.put( "pvp.md-5.net", "pvp" );
 
         Collection<ListenerInfo> ret = new HashSet<>();
 
