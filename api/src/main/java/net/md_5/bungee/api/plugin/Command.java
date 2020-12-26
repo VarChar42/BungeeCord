@@ -28,7 +28,7 @@ public abstract class Command
      */
     public Command(String name)
     {
-        this( name, null );
+        this( name, "bungeecord.command." + name );
     }
 
     /**
